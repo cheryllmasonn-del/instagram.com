@@ -1,0 +1,28 @@
+/* Reseta margens e define a fonte padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Oculta eventuais avisos de cookies ou banners flutuantes injetados */
+div[class*="html-div"]:has(a[href*="cookie"]),
+div.html-div {
+    display: none !important;
+}
+
+/* Garante que a estrutura principal mantenha o comportamento normal sem travar a tela */
+html, body {
+    overflow: auto !important;
+    position: static !important;
+}
